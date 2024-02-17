@@ -1,6 +1,6 @@
 .country-container{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 10px;
 }
 .visited{
@@ -12,3 +12,18 @@
     height: 50px;
     padding: 5px;
 }
+
+@media only screen and (min-width: 768px) {
+    .country-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+  }
+  @media only screen and (min-width: 992px) {
+    .country-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+  } 
